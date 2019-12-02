@@ -1,0 +1,132 @@
+@import "./reset.scss";
+@import "./var.scss";
+.img-block{
+  img{
+    width: 100%;
+  }
+}
+@mixin single-line-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.single-line-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin multi-line-ellipsis($row){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $row;
+  overflow: hidden;
+}
+.text-danger{
+  color: #fe6150 !important;
+}
+.text-success{
+  color: #67c23a !important;
+}
+.text-wqd-primary{
+  color: $wqd-font-color
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+  .cube-input-field{
+    text-align: right !important;
+  }
+}
+.pull-left{
+  float: left !important;
+}
+.pull-right{
+  float: right !important;
+}
+.clearfix:before,.clearfix:after{
+  content: "";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+/*活动摇摆动画*/
+@keyframes swing {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  50%,100% {
+    transform: rotate(0deg);
+  }
+}
+/*改变透明度动画*/
+@keyframes opacity {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*图片缩放动画*/
+@keyframes scale {
+  0% {
+    transform: scale(0); 
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+#nprogress .bar {
+  background: $wqd-font-color !important; //自定义颜色
+}
+#nprogress .spinner-icon{
+  display: none;
+  border-top-color: $wqd-font-color !important;
+  border-left-color: $wqd-font-color !important;
+}
+#nprogress .peg{
+  -webkit-box-shadow: 0 0 10px $wqd-font-color, 0 0 5px $wqd-font-color !important;
+  box-shadow: 0 0 10px $wqd-font-color, 0 0 5px $wqd-font-color !important
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+// elemetn-ui
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 128px;
+  height: 128px;
+  line-height: 128px;
+  text-align: center;
+}
+.avatar {
+  width: 128px;
+  height: 128px;
+  display: block;
+}
+
