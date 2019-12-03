@@ -2,7 +2,7 @@
   <section id="err-404">
     <div class="content_404">
       <div class="img-404">
-        <img src="/static/images/page-error.png"/>
+        <img src="/images/page-error.png"/>
       </div>
     </div>
     <h2>页面加载失败~</h2>

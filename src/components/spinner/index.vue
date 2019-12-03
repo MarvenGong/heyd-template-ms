@@ -1,5 +1,5 @@
 <template>
-  <img class="img-logo-loading" src="/static/images/logo-loading.gif" alt="">
+  <img class="img-logo-loading" src="/images/logo-loading.gif" alt="">
   <!-- <img class="spinner-roll" width="32"
     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAAC
     qaXHeAAAG40lEQVR4XuVbfYgVVRQ/Z96sW2CFbbv77pndZ1EhZX8ULqtQkFKZlJp9on1BZFp
